@@ -1,0 +1,33 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApp.Default" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Course Registration</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <b>Course:</b>
+            <asp:CheckBox ID="chkMCA" runat="server" Text="MCA" />
+            <asp:CheckBox ID="chkBCA" runat="server" Text="BCA" />
+            <asp:CheckBox ID="chkMBA" runat="server" Text="MBA" />
+            <asp:CheckBox ID="chkBBA" runat="server" Text="BBA" />
+
+            <br /><br />
+
+            <asp:Button ID="btnRegister" runat="server" Text="register" OnClick="btnRegister_Click" />
+
+            <br /><br />
+
+            <asp:TextBox ID="txtResult" runat="server"
+                TextMode="MultiLine"
+                Rows="6"
+                Columns="40">
+            </asp:TextBox>
+
+        </div>
+    </form>
+</body>
+</html>
